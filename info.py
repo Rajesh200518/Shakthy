@@ -18,11 +18,11 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', 'https://telegram.me/TechifyGuru')
+API_ID = int(environ.get('API_ID', '27549502'))
+API_HASH = environ.get('API_HASH', '35892287036e27af8e9298f03483fdd4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7636654992:AAFed5c5ddkkUYWEgbhvfQQ_FIr11Q3Aog4')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '7844061005').split()]
+USERNAME = environ.get('USERNAME', 'https://telegram.me/')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "")
